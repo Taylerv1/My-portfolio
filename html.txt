@@ -1,0 +1,25 @@
+<div class="box">
+           <div class="card">
+                  <i class="fa-regular fa-image"></i>
+                  <h5>Design</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad libero est et vitae sunt? Nemo harum eveniet dignissimos ad libero?</p>
+           </div>
+
+           <div class="card">
+                  <i class="fa-solid fa-code"></i>
+                  <h5>Web Dev</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad libero est et vitae sunt? Nemo harum eveniet dignissimos ad libero?</p>
+           </div>
+
+           <div class="card">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <h5>Mobile App</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad libero est et vitae sunt? Nemo harum eveniet dignissimos ad libero?</p>
+           </div>
+
+           <div class="card">
+                  <i class="fa-solid fa-display"></i>
+                  <h5>Software</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad libero est et vitae sunt? Nemo harum eveniet dignissimos ad libero?</p>
+           </div>
+</div>
