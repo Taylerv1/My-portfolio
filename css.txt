@@ -1,180 +1,154 @@
-:root{
-    --primaryColor:#298fb5;
-    --Secondaryolor:#0e53dc;
-    --lightColor:#cfd4e0;
-    --bgcolor-1:#122029;
-    --bgcolor-2:#122333;
+:root {
+    --primaryColor:#c90101;
+    --secondaryColor:#b54177;
+    --lightColor:#ebebeb;
+    --bgColr-1:#122029;
+    --bgColr-2:#0d3141;
     --padding:8%;
-    
 }
-@font-face{
-    font-family: "josefinSans";
+
+@font-face {
+    font-family: "XXX";
     src: url(/fonts/static/JosefinSans-Bold.ttf);
 }
-
-
-*{ 
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-family: "josefinSans",sans-serif;
+html {
+    font-family: "XXX";
     font-size: 16px;
     color: var(--lightColor);
 }
 
-h1{
-    font-size: 3.65rem;
-    margin: 1.7rem 0;
+.Home {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0,0.75),rgba(18, 32, 41,0.75))  , url(/vapor-4763904_1920.jpg); */
+    /* background-size:  cover; */
+    background-color: var(--bgColr-1);
+    display: flex;
+    flex-direction: column;
 }
 
-h3{
-    font-size: 1.5rem;
-    margin-bottom: 3.3rem;
-}
-
-h4{
-   font-size: 1.25rem;
-   letter-spacing: 0.12rem;
-   color: var(--Secondaryolor);
-}
-
-span{
-    color: var(--primaryColor);
-    transition: 0.5s;
-}
-
-
-nav{
-    
-    padding-top:3rem;
-    padding-right: var(--padding);
-    padding-left: var(--padding);
+nav {
+    padding-top: 2.8rem;
+    padding-left: 8%;
+    padding-right: 8%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+
+span {
+    color: var(--primaryColor);
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0.8rem 1.5rem;
+    margin: 0 1.4rem;
 }
-
-
-.home{
-    background-color: var(--bgcolor-1);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.h2{
-    font-size: 1.9rem;
-    text-decoration: none;
-    color: var(--lightColor);
-    transition: 0.5s;
-}
-
-
-.h2:hover{
-    color: red
-}
-
-
-span:hover{
-    color: var(--lightColor);
-}
-
-
 
 nav ul li a {
     text-decoration: none;
-    text-transform: capitalize;
-    font-size: 0.94rem;
     color: var(--lightColor);
-    transition: 0.5s;
-}
-
-nav ul li a:hover{
-    color:var(--primaryColor);
-}
-
-.btn{
-    background-color: var(--primaryColor);
-    text-decoration: none;
-    border: 1px solid var(--primaryColor);
-    border-radius: 30px;
-    padding: 0.85rem 2.2rem;
-    color: var(--lightColor);
-    transition: 0.6s;
-    
-}
-
-.btn:hover{
-    background-color: transparent;
-    color: var(--lightColor);
-    border: var(--primaryColor) 1px solid;
-}
-
-.content{
-    flex-grow: 1;
-    padding: 0 var(--padding);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-text{
-    position: relative;
-    bottom: 37px;
-}
-
-
-.social{
-    margin-top: 3.5rem;
-}
-
-.social img {
-    margin-right: 2rem;
-    width: 2.1rem;
     transition: 0.4s;
 }
 
-.social img:hover{
+nav ul li a:hover {
+    color: var(--primaryColor);
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--lightColor);
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primaryColor);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: 2px solid var(--primaryColor);
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: var(--padding);
+    justify-content: space-between;
+}
+
+.container-texts {
+    position: relative;
+    bottom: 53px;
+}
+
+h4 {
+    font-size: 1.1rem;
+    letter-spacing: 0.13rem;
+    color: var(--secondaryColor);
+    margin-bottom: 1.7rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.social {
+    margin-top: 1.6rem;
+    margin-bottom: 2.3rem;
+}
+
+.social img {
+    width: 34px;
+    margin-right: 1.7rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
     transform: scale(1.2);
 }
 
-.container-images{
+.container-images {
+    position: relative;
     width: 45%;
     height: 90%;
-    position: relative;
     align-self: flex-end;
-  
 }
 
 .container-images img {
     position: absolute;
     bottom: 0;
-    height: 100%;
+    height: 87%;
     left: 50%;
-    transform: translate(-50%);
-    transition: 0.9s;
+    transform: translateX(-50%);
+    transition: bottom 1s , left 1s;
 }
 
-.container-images:hover .shape{
-   bottom: 40px;
+.container-images:hover .shape {
+    bottom: 30px;
 }
 
-.container-images:hover .pic{
-   left: 45%;
+.container-images:hover .pic {
+    left: 45%;
 }
-
-
-I have a vocational education certificate (TS) and studied an Android application development course
-             using an mit app inventor  I also have some skills in programming languages 
-             like " Html , Css , Js , Php , Python "
-
